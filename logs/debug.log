@@ -1,0 +1,2 @@
+INFO 2025-05-21 15:47:33,900 logging [REGISTER] Tentative de creation <QueryDict: {'csrfmiddlewaretoken': ['kIWlgu9l1gdFCh55XGPmd4TZit6Q4xdqiSj1nUg0WkUgQ0bAsTOxg1FNEGJqZFiP'], 'username': ['hama'], 'email': ['hama@gmail.com'], 'password': ['2024'], 'role': ['scrum_master']}>
+INFO 2025-05-21 15:47:34,796 logging [REGISTER] Utilisateur créé {'id': 11, 'username': 'Hama', 'email': 'hama@gmail.com', 'role': 'scrum_master'}
