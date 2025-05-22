@@ -14,11 +14,9 @@ jobs:
                 ports:
                     - 5432:5432
                 env:
-                    DATABASE_URL: postgres://postgres:2024@localhost:5432/scrum_db
-                    DATABASE_HOST: localhost
-                    DATABASE_PORT: 5432
-                    DATABASE_USER: postgres
-                    DATABASE_PASSWORD: 2024
+                    POSTGRES_USER: postgres
+                    POSTGRES_PASSWORD: 2024
+                    POSTGRES_DB: scrum_db
                 options: >-
                     --health-cmd "pg_isready -U postgres"
                     --health-interval 10s
@@ -45,4 +43,3 @@ jobs:
                   echo "Lancement de l'application Django"
                   echo "L'application est deploiée avec succès"
 
-            
