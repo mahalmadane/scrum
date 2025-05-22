@@ -42,4 +42,3 @@ jobs:
                   echo "Execution des migrations"
                   echo "Lancement de l'application Django"
                   echo "L'application est deploiée avec succès"
-
