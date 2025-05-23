@@ -1,2 +1,148 @@
 INFO 2025-05-21 15:47:33,900 logging [REGISTER] Tentative de creation <QueryDict: {'csrfmiddlewaretoken': ['kIWlgu9l1gdFCh55XGPmd4TZit6Q4xdqiSj1nUg0WkUgQ0bAsTOxg1FNEGJqZFiP'], 'username': ['hama'], 'email': ['hama@gmail.com'], 'password': ['2024'], 'role': ['scrum_master']}>
 INFO 2025-05-21 15:47:34,796 logging [REGISTER] Utilisateur créé {'id': 11, 'username': 'Hama', 'email': 'hama@gmail.com', 'role': 'scrum_master'}
+INFO 2025-05-22 14:56:08,651 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-22 14:59:11,741 log Not Found: /
+DEBUG 2025-05-22 15:00:11,755 connectionpool Starting new HTTPS connection (1): o4509360921837568.ingest.de.sentry.io:443
+DEBUG 2025-05-22 15:00:14,770 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+INFO 2025-05-22 15:02:54,162 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-22 15:03:04,929 log Not Found: /api/users/register/ 
+DEBUG 2025-05-22 15:03:55,197 connectionpool Starting new HTTPS connection (1): o4509360921837568.ingest.de.sentry.io:443
+WARNING 2025-05-22 15:03:55,520 log Method Not Allowed: /api/users/register/
+DEBUG 2025-05-22 15:03:56,160 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:03:56,806 log Not Found: /favicon.ico
+DEBUG 2025-05-22 15:04:05,042 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+INFO 2025-05-22 15:04:21,383 logging [REGISTER] Tentative de creation <QueryDict: {'csrfmiddlewaretoken': ['YRm6yHuFRRk5jEuaFTLJVtrUZrXbcK2DtBHJbJZ0Bsse5gEg0UA5z2ov1xTU5dsU'], 'username': ['goku'], 'email': ['touremahalmadane2511@gmail.com'], 'password': ['2024'], 'role': ['scrum_master']}>
+ERROR 2025-05-22 15:04:21,652 logging [REGISTER ERROR] Erreur: {'email': [ErrorDetail(string='user with this email already exists.', code='unique')]}
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\scrum\core\utils\logging.py", line 11, in handler_creat_view
+    response= super(view_instace.__class__, view_instace).create(request, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\scrum\venv\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\hp\Desktop\scrum\venv\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'email': [ErrorDetail(string='user with this email already exists.', code='unique')]}
+ERROR 2025-05-22 15:04:21,717 log Internal Server Error: /api/users/register/
+DEBUG 2025-05-22 15:04:22,027 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+INFO 2025-05-22 15:04:54,108 logging [REGISTER] Tentative de creation <QueryDict: {'csrfmiddlewaretoken': ['57YRYClSZxDcX0Je79wK8i64EMILdhrrARjuBEQdJ8LlJCTksal6MR3FGSEu6KRI'], 'username': ['goku'], 'email': ['touregoku250@gmail.com'], 'password': ['001998Ma'], 'role': ['scrum_master']}>
+INFO 2025-05-22 15:04:55,085 logging [REGISTER] Utilisateur créé {'id': 12, 'username': 'Goku', 'email': 'touregoku250@gmail.com', 'role': 'scrum_master'}
+DEBUG 2025-05-22 15:06:02,377 connectionpool Starting new HTTPS connection (2): o4509360921837568.ingest.de.sentry.io:443
+WARNING 2025-05-22 15:06:02,388 log Method Not Allowed: /api/users/login/
+DEBUG 2025-05-22 15:06:03,416 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:06:05,150 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+INFO 2025-05-22 15:07:07,029 logging [REGISTER] Tentative de creation <QueryDict: {'csrfmiddlewaretoken': ['57YRYClSZxDcX0Je79wK8i64EMILdhrrARjuBEQdJ8LlJCTksal6MR3FGSEu6KRI'], 'username': ['goku'], 'email': ['touregoku250@gmail.com'], 'password': ['001998Ma'], 'role': ['scrum_master']}>
+ERROR 2025-05-22 15:07:07,114 logging [REGISTER ERROR] Erreur: {'email': [ErrorDetail(string='user with this email already exists.', code='unique')]}
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\scrum\core\utils\logging.py", line 11, in handler_creat_view
+    response= super(view_instace.__class__, view_instace).create(request, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\scrum\venv\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\hp\Desktop\scrum\venv\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'email': [ErrorDetail(string='user with this email already exists.', code='unique')]}
+ERROR 2025-05-22 15:07:07,142 log Internal Server Error: /api/users/register/
+DEBUG 2025-05-22 15:07:07,358 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:07:30,901 log Unauthorized: /api/users/12/
+DEBUG 2025-05-22 15:07:31,045 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:08:05,062 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:08:06,595 log Unauthorized: /api/users/12/
+DEBUG 2025-05-22 15:08:06,845 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:08:16,030 log Method Not Allowed: /api/users/register/
+DEBUG 2025-05-22 15:08:16,213 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+INFO 2025-05-22 15:08:27,726 logging [REGISTER] Tentative de creation <QueryDict: {'csrfmiddlewaretoken': ['T9ZRlhxuJTWzAiVLs7WfMiG6Ke3i1Z0toTkuYj2Ptu4ImU5RN8LBqRDHMkZ1UsqK'], 'username': ['gohan'], 'email': ['gohan250@gmail.com'], 'password': ['2024'], 'role': ['scrum_master']}>
+INFO 2025-05-22 15:08:28,642 logging [REGISTER] Utilisateur créé {'id': 13, 'username': 'Gohan', 'email': 'gohan250@gmail.com', 'role': 'scrum_master'}
+WARNING 2025-05-22 15:08:59,590 log Not Found: /api/users/login/ 
+DEBUG 2025-05-22 15:09:05,210 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:09:14,632 log Not Found: /api/users/login/ 
+WARNING 2025-05-22 15:09:52,112 log Method Not Allowed: /api/users/login/
+DEBUG 2025-05-22 15:09:52,219 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:10:05,042 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:10:14,655 log Not Found: /api/users/
+WARNING 2025-05-22 15:10:28,963 log Unauthorized: /api/users/12/
+DEBUG 2025-05-22 15:10:29,157 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:11:05,109 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:11:18,612 log Not Found: /api/users/login/ 
+WARNING 2025-05-22 15:11:56,322 log Not Found: /api/users/login/ 
+DEBUG 2025-05-22 15:12:05,873 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:13:14,636 log Not Found: /api/users/login/ 
+DEBUG 2025-05-22 15:14:05,058 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:15:42,987 log Unsupported Media Type: /api/users/login/
+DEBUG 2025-05-22 15:15:43,193 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:16:01,234 log Unsupported Media Type: /api/users/login/
+DEBUG 2025-05-22 15:16:01,364 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:16:05,083 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:18:14,835 log Method Not Allowed: /api/users/token/verify/
+DEBUG 2025-05-22 15:18:14,955 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:19:05,044 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:19:07,575 log Unauthorized: /api/users/token/verify/
+DEBUG 2025-05-22 15:19:07,688 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:19:20,968 log Method Not Allowed: /api/users/login/
+DEBUG 2025-05-22 15:19:21,083 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:20:05,063 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:20:45,308 log Method Not Allowed: /api/users/login/
+DEBUG 2025-05-22 15:20:45,415 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:20:48,610 log Method Not Allowed: /api/users/register/
+DEBUG 2025-05-22 15:20:48,715 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:21:05,058 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:21:07,882 log Method Not Allowed: /api/users/login/
+DEBUG 2025-05-22 15:21:07,993 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:21:51,356 log Method Not Allowed: /api/users/token/verify/
+DEBUG 2025-05-22 15:21:51,464 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:22:05,052 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:22:37,727 log Unauthorized: /api/users/users/
+DEBUG 2025-05-22 15:22:37,849 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:22:47,217 log Method Not Allowed: /api/users/token/verify/
+DEBUG 2025-05-22 15:22:47,324 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:22:55,887 log Unauthorized: /api/users/12/
+DEBUG 2025-05-22 15:22:55,995 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:23:05,056 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:23:42,497 log Method Not Allowed: /api/users/login/
+DEBUG 2025-05-22 15:23:42,613 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:24:05,061 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:24:11,057 log Unauthorized: /api/users/login/
+DEBUG 2025-05-22 15:24:11,182 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:25:05,131 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:29:46,476 log Method Not Allowed: /api/users/token/refresh/
+DEBUG 2025-05-22 15:29:46,597 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:30:05,050 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:40:15,206 log Unauthorized: /api/users/login/
+DEBUG 2025-05-22 15:40:15,208 connectionpool Resetting dropped connection: o4509360921837568.ingest.de.sentry.io
+DEBUG 2025-05-22 15:40:16,288 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:40:51,054 log Method Not Allowed: /api/users/register/
+DEBUG 2025-05-22 15:40:51,190 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:41:05,095 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:41:08,380 log Method Not Allowed: /api/users/login/
+DEBUG 2025-05-22 15:41:08,592 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:41:42,089 log Unauthorized: /api/users/login/
+DEBUG 2025-05-22 15:41:42,412 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:42:05,202 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:42:48,691 log Unsupported Media Type: /api/users/login/
+DEBUG 2025-05-22 15:42:48,821 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:43:05,092 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:51:07,185 log Not Found: /api/users/users/ 
+DEBUG 2025-05-22 15:52:05,107 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:52:07,658 log Unauthorized: /api/project/projects/
+DEBUG 2025-05-22 15:52:07,787 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:53:05,264 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:55:14,721 log Unauthorized: /api/users/users/
+DEBUG 2025-05-22 15:55:14,878 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:55:41,212 log Unauthorized: /api/users/users/
+DEBUG 2025-05-22 15:55:41,344 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:56:05,097 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:56:25,081 log Unauthorized: /api/users/users/
+DEBUG 2025-05-22 15:56:25,207 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:57:05,094 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+WARNING 2025-05-22 15:57:06,285 log Method Not Allowed: /api/users/login/
+DEBUG 2025-05-22 15:57:06,418 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:58:05,103 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 15:59:05,098 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+DEBUG 2025-05-22 16:00:05,097 connectionpool https://o4509360921837568.ingest.de.sentry.io:443 "POST /api/4509360923213904/envelope/ HTTP/1.1" 200 0
+INFO 2025-05-23 09:51:09,006 autoreload C:\Users\hp\Desktop\scrum\apps\users\urls.py changed, reloading.
+INFO 2025-05-23 09:51:12,294 autoreload Watching for file changes with StatReloader
+INFO 2025-05-23 09:51:15,347 autoreload C:\Users\hp\Desktop\scrum\apps\users\urls.py changed, reloading.
+INFO 2025-05-23 09:51:16,933 autoreload Watching for file changes with StatReloader
+INFO 2025-05-23 09:51:20,189 autoreload C:\Users\hp\Desktop\scrum\apps\users\urls.py changed, reloading.
+INFO 2025-05-23 09:51:21,564 autoreload Watching for file changes with StatReloader
+INFO 2025-05-23 09:52:04,076 autoreload C:\Users\hp\Desktop\scrum\apps\users\urls.py changed, reloading.
+INFO 2025-05-23 09:52:05,471 autoreload Watching for file changes with StatReloader
